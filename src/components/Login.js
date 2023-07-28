@@ -11,7 +11,7 @@ function LoginPage() {
   const handleLogin = (e) => {
     e.preventDefault();
     // Send the login request to the backend
-    axios.post('https://PlanYourSchedule.render.com/api/users/login', { username, password })
+    axios.post('https://planyourschedule.onrender.com/api/users/login', { username, password })
       .then((response) => {
         // Save token to local storage
         localStorage.setItem('token', response.data.token);
