@@ -33,7 +33,7 @@ function EventForm({ onSuccess }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title && description && venue && startDate && endDate) {
-      axios.post('`https://planyourschedule.render.com`/api/schedule', {
+      axios.post('https://planyourschedule.onrender.com/api/schedule', {
         title,
         description,
         venue,
