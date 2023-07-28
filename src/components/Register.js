@@ -9,7 +9,7 @@ function RegisterPage() {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    axios.post('https://PlanYourSchedule.render.com/api/users/register', { username, password})
+    axios.post('https://planyourschedule.onrender.com/api/users/register', { username, password})
       .then((response) => {
         // After successful registration, redirect to home page
         navigate('/home');
