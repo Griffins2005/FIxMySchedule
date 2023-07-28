@@ -7,7 +7,7 @@ function EventItem({ event, onEventDeleted }) {
 const handleDeleteClick = () => {
   if (event._id) {
     const token = localStorage.getItem('token');
-    axios.delete(`https://PlanYourSchedule.render.com/api/schedule/${event._id}`, {
+    axios.delete(`https://planyourschedule.onrender.com/api/schedule/${event._id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(() => {
