@@ -17,7 +17,7 @@ function EventForm({ onSuccess }) {
     const localToken = localStorage.getItem('token');
     setToken(localToken);
     console.log(localToken)
-    axios.get('https://PlanYourSchedule.render.com/api/schedule', { headers: { authorization: `Bearer ${localToken}` } })
+    axios.get('https://planyourschedule.onrender.com/api/schedule', { headers: { authorization: `Bearer ${localToken}` } })
       .then(response => {
         setEvents(response.data);
       })
@@ -33,7 +33,7 @@ function EventForm({ onSuccess }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title && description && venue && startDate && endDate) {
-      axios.post('`https://PlanYourSchedule.render.com`/api/schedule', {
+      axios.post('`https://planyourschedule.render.com`/api/schedule', {
         title,
         description,
         venue,
