@@ -1,8 +1,7 @@
 // ProtectedRoute.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage';
+import { Routes, Route } from 'react-router-dom
 
 function ProtectedRoute() {
   const navigate = useNavigate();
